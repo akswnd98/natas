@@ -1,7 +1,7 @@
 import socket
 
 string = ""
-for x in range(121, 641):
+for x in range(600, 641):
     send = socket.socket(socket.AF_INET, socket.SOCK_STREAM, 0)
     send.connect(("178.79.134.250", 80))
     data = "GET / HTTP/1.1\r\n"
